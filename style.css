@@ -1,0 +1,89 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #98e5ff;
+}
+
+form {
+    width: 30%;
+    padding: 30px;
+    margin-inline: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.56);
+}
+
+form input, form button {
+    width: 60%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+form button {
+    width: 50%;
+    margin-bottom: 0;
+    background: rgba(255, 255, 255, .7);
+    transition: .4s ease;
+}
+form button:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+.weather-wrap {
+    width: 30%;
+    margin-inline: auto;
+    padding: 20px;
+    background: #fff;
+    margin-top: 90px;
+    border-radius: 10px;
+}
+
+.weather-wrap h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.weather-wrap #temp {
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+#temp span {
+    position: absolute;
+    font-size: 17px;
+    font-weight: 400;
+    top: 0;
+    right: -20px;
+}
+.weather-wrap .feels-like {
+    margin-top: 3px;
+    font-size: 15px;
+    color: #939393;
+}
+.weather-wrap img {
+    width: 30%;
+    margin-block: 15px;
+}
+
+.weather-info p:not(:last-child) {
+    margin-bottom: 5px;
+}
